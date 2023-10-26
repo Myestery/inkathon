@@ -1,0 +1,20 @@
+{
+  "name": "@myestery/create-inkathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./bin/create-inkathon.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "clear": "^0.1.0",
+    "figlet": "^1.7.0",
+    "inquirer": "^9.2.11"
+  }
+}
