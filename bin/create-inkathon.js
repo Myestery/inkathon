@@ -150,7 +150,7 @@ let inkathonName = "";
   }
 
   const pnpnExists = await checkForPnPm();
-  if (!pnpnExists || true) {
+  if (!pnpnExists) {
     await askAndInstallPnPm();
   }
 
