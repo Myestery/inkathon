@@ -1,7 +1,7 @@
 {
-  "name": "@myestery/create-inkathon",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@myestery/create-ink-app",
+  "version": "0.0.1",
+  "description": "A starter kit for Inkathon",
   "main": "index.js",
   "type": "module",
   "scripts": {
