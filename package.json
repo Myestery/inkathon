@@ -1,5 +1,5 @@
 {
-  "name": "@myestery/create-ink-app",
+  "name": "@myestery/create-inkathon-app",
   "version": "0.0.1",
   "description": "A starter kit for Inkathon",
   "main": "index.js",
