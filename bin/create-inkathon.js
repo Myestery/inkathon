@@ -69,6 +69,23 @@ const createInkathon = async (name) => {
   });
 };
 
+const fixFrontendEnv = async () => {
+  const commandToFix = `cd ${inkathonName}/frontend && cp .env.local.example .env`;
+  // uncomment the following line to fix the frontend env
+
+  return new Promise((resolve) => {
+    exec(commandToFix, (error, stdout, stderr) => {
+      if (error) {
+        console.error(chalk.red("Error fixing frontend env."), error);
+        resolve(false);
+      } else {
+        console.log(chalk.green("frontend env fixed."));
+        resolve(true);
+      }
+    });
+  });
+}
+
 const askForInstallDependencies = async () => {
   const answers = await inquirer.prompt([
     {
@@ -155,6 +172,7 @@ let inkathonName = "";
   }
 
   await createInkathon(inkathonName);
+  await fixFrontendEnv();
   await askForInstallDependencies();
 
   // display figlet
